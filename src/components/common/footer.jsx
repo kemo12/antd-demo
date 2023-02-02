@@ -1,4 +1,4 @@
-import { BackTop } from "antd";
+import { BackTop, FloatButton } from "antd";
 import React from "react";
 
 const AppFooter = () => {
@@ -31,11 +31,11 @@ const AppFooter = () => {
                         </li>
                     </ul>
                     <div className="copyright">Copyright &copy; 2020 Tech</div>
-                    <BackTop>
+                    <FloatButton.BackTop>
                         <div className="goTop">
                             <i className="fas fa-arrow-circle-up"></i>
                         </div>
-                    </BackTop>
+                    </FloatButton.BackTop>
                 </div>
             </div>
         </div>
