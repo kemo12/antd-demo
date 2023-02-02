@@ -1,37 +1,36 @@
 import { Menu } from "antd";
 import React from "react";
-
+const menuList = [
+    {
+        key: "home",
+        value: "Home",
+    },
+    {
+        key: "about",
+        value: "About",
+    },
+    {
+        key: "features",
+        value: "Features",
+    },
+    {
+        key: "howitworks",
+        value: "How it works",
+    },
+    {
+        key: "faq",
+        value: "FAQ",
+    },
+    {
+        key: "pricing",
+        value: "Pricing",
+    },
+    {
+        key: "contact",
+        value: "Contact",
+    },
+];
 const AppHeader = () => {
-    const menuList = [
-        {
-            key: "home",
-            value: "Home",
-        },
-        {
-            key: "about",
-            value: "About",
-        },
-        {
-            key: "features",
-            value: "Features",
-        },
-        {
-            key: "howitworks",
-            value: "How it works",
-        },
-        {
-            key: "faq",
-            value: "FAQ",
-        },
-        {
-            key: "pricing",
-            value: "Pricing",
-        },
-        {
-            key: "contact",
-            value: "Contact",
-        },
-    ];
     return (
         <div className="container-fluid">
             <div className="header">
