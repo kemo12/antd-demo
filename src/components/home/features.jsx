@@ -10,14 +10,14 @@ import { Card } from "antd";
 const { Meta } = Card;
 const Features = () => {
     return (
-        <div className="block featureBlock bgGray">
+        <div id="features" className="block featureBlock bgGray">
             <div className="container-fluid">
                 <div className="titleHolder">
                     <h2>Key Features and Benefites</h2>
                     <p>Lorem ipsum dolor sit,Lorem ipsum dolor sit.</p>
                 </div>
                 <Row gutter={[16, 16]}>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image1} />}
@@ -25,7 +25,7 @@ const Features = () => {
                             <Meta title="Modern Design" />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image2} />}
@@ -33,7 +33,7 @@ const Features = () => {
                             <Meta title="Clean and Fleqant" />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image3} />}
@@ -41,7 +41,7 @@ const Features = () => {
                             <Meta title="Great Support" />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image4} />}
@@ -49,7 +49,7 @@ const Features = () => {
                             <Meta title="Easy to Customise" />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image5} />}
@@ -57,7 +57,7 @@ const Features = () => {
                             <Meta title="Unlimited Features" />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col md={{ span: 8 }} xs={{ span: 24 }} sm={{ span: 12 }}>
                         <Card
                             hoverable
                             cover={<img alt="example" src={image6} />}

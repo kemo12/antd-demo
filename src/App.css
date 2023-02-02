@@ -66,6 +66,10 @@ p {
   header
   ------ 
   */
+.header .ant-anchor-link:before,
+.header .ant-anchor-link:after {
+    width: 0px !important;
+}
 .ant-layout-header {
     position: fixed;
     left: 0;

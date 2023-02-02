@@ -1,33 +1,33 @@
-import { Menu } from "antd";
 import React from "react";
+import { Anchor } from "antd";
 const menuList = [
     {
-        key: "home",
-        value: "Home",
+        title: "Home",
+        href: "#home",
     },
     {
-        key: "about",
-        value: "About",
+        title: "About",
+        href: "#about",
     },
     {
-        key: "features",
-        value: "Features",
+        title: "Features",
+        href: "#features",
     },
     {
-        key: "howitworks",
-        value: "How it works",
+        title: "How it works",
+        href: "#works",
     },
     {
-        key: "faq",
-        value: "FAQ",
+        title: "FAQ",
+        href: "#faq",
     },
     {
-        key: "pricing",
-        value: "Pricing",
+        title: "Pricing",
+        href: "#pricing",
     },
     {
-        key: "contact",
-        value: "Contact",
+        title: "Contact",
+        href: "#contact",
     },
 ];
 const AppHeader = () => {
@@ -38,14 +38,8 @@ const AppHeader = () => {
                     <i className="fas fa-bolt"></i>
                     <a href="http://www.google.com">Tech</a>
                 </div>
-                <Menu
-                    mode="horizontal"
-                    defaultSelectedKeys={["home"]}
-                    items={menuList.map((item) => ({
-                        key: item.key,
-                        label: item.value,
-                    }))}
-                />
+
+                <Anchor targetOffset={65} items={menuList} />
             </div>
         </div>
     );
